@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S-70LD Odd Form Machine | Southern Machinery</title>
+<meta name="description" content="S-70LD Odd Form Machine by Southern Machinery — automate radial/odd-form insertion, eliminate 70-90% of manual THT labor, achieve 18-24 month ROI. CE certified, global support.">
+<meta name="keywords" content="S-70LD, odd form machine, THT insertion, radial insertion, SMT equipment, electronics manufacturing, EMS equipment">
+<link rel="canonical" href="https://www.smthelp.com/products/s-70ld">
+<meta property="og:title" content="S-70LD Odd Form Machine | Southern Machinery">
+<meta property="og:description" content="Automate 3-25mm radial/odd-form元件插入，节省70-90%人工成本，18-24个月回本。">
+<meta property="og:image" content="https://ph.smthelp.com/images/2024/06/26/Southern-Machinery-logo-300x83.png">
+<meta property="og:type" content="product">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+<!-- ═══════════════════════════════════════════════
+     PRODUCT CONFIGURATION — EDIT THESE VARIABLES
+     ═══════════════════════════════════════════════ -->
+<script>
+// ─── PRODUCT DATA ────────────────────────────────
+const productName = "S-70LD Odd Form Machine";
+const productSubtitle = "Automated Radial & Odd-Form Insertion — Eliminate Manual THT Labor";
+const productTagline = "From 9 manual operators to 1 automated cell. 70–90% labor reduction. 18–24 month payback.";
+
+const productSpecs = [
+  { label: "Insertion Range", value: "3 – 25 mm", icon: "📏" },
+  { label: "Component Types", value: "Radial, relay, transformer, terminal blocks", icon: "🔧" },
+  { label: "Max PCB Size", value: "500 × 400 mm", icon: "📋" },
+  { label: "Insertion Speed", value: "Up to 2,500 CPH", icon: "⚡" },
+  { label: "Positioning Accuracy", value: "±0.15 mm", icon: "🎯" },
+  { label: "Feeder Capacity", value: "Up to 48 feeders (tube/tray)", icon: "📦" },
+  { label: "Power Supply", value: "220V / 50-60Hz / 3-phase", icon: "🔌" },
+  { label: "Air Pressure", value: "0.5 – 0.7 MPa", icon: "💨" },
+  { label: "Machine Dimensions", value: "2,100 × 1,400 × 1,600 mm", icon: "📐" },
+  { label: "Weight", value: "~1,200 kg", icon: "⚖️" },
+  { label: "Control System", value: "PLC + Servo motor", icon: "🖥️" },
+  { label: "Certification", value: "CE", icon: "✅" }
+];
+
+const productApplications = [
+  "Home appliance control boards",
+  "LED driver & lighting PCBs",
+  "Power supply modules",
+  "Industrial automation controllers",
+  "Automotive electronics (ECU, BCM)",
+  "Smart meter PCBs",
+  "IoT device assemblies",
+  "White goods controllers"
+];
+
+const productBenefits = [
+  { title: "70–90% Labor Reduction", desc: "Replaces 6–9 manual insertion operators per shift with one automated insertion cell." },
+  { title: "18–24 Month Payback", desc: "ROI analysis shows payback in under 2 years based on typical Mexico/Vietnam labor rates." },
+  { title: "±0.15 mm Precision", desc: "Servo-driven insertion ensures zero lead bending and consistent solder joints." },
+  { title: "Fast Changeover", desc: "Tool-free feeder swaps and recipe storage cut changeover time to under 15 minutes." },
+  { title: "N+1 Spare Capacity", desc: "Designed for 24/7 production with built-in redundancy and self-diagnostic routines." },
+  { title: "Global Support", desc: "7×24 remote assistance + on-site installation & training included in every purchase." }
+];
+
+const productImages = [
+  "https://ph.smthelp.com/s-70ld/hero.jpg",
+  "https://ph.smthelp.com/s-70ld/side-view.jpg",
+  "https://ph.smthelp.com/s-70ld/feeder-system.jpg",
+  "https://ph.smthelp.com/s-70ld/control-panel.jpg",
+  "https://ph.smthelp.com/s-70ld/in-action.jpg"
+];
+
+const productFAQs = [
+  {
+    q: "What is the payback period compared to manual THT insertion?",
+    a: "At typical labor rates in Mexico (USD $4.5–6/hr fully loaded), Vietnam (USD $2.5–4/hr), or Eastern Europe (USD $6–10/hr), the S-70LD pays for itself in 18–24 months. One machine replacing 6–9 operators at USD $15,000–25,000/year each in fully loaded labor cost generates USD $90,000–225,000 in annual savings against a machine investment of USD $45,000–80,000."
+  },
+  {
+    q: "Can the S-70LD handle components that are not radially oriented?",
+    a: "Yes. The S-70LD is an odd-form machine capable of handling 3–25mm components including radial capacitors, relays, transformers, terminal blocks, connectors, and custom-shaped parts. For purely axial components, our S-3010A axial inserter is recommended. For mixed production lines, the S-70LD integrates seamlessly with our S-PP350 pick-and-place and S-WS450 wave solder."
+  },
+  {
+    q: "What are the changeover requirements between different component types?",
+    a: "Changeover is designed to be fast and tool-free. Feeder positions are recipe-stored in the PLC. Swapping a tube feeder takes under 3 minutes. Full line changeover (different board type) is typically under 15 minutes. We recommend keeping 2–3 feeder sets per major product family to minimize downtime."
+  },
+  {
+    q: "Is the machine difficult to program for new products?",
+    a: "No. The S-70LD uses a recipe-based HMI interface. Operators input PCB dimensions, component positions, and feeder assignments through the 10-inch touchscreen. Programming a new board type takes 20–40 minutes for first-time users. Our engineers also pre-load standard recipes during installation."
+  },
+  {
+    q: "What spare parts availability is there outside China?",
+    a: "Southern Machinery maintains a USD $500K+ spare parts inventory in Shenzhen with 3–5 day DHL/UPS global shipping. Common wear parts (feeder springs, insertion pins, belts) are stocked and ship within 24 hours. Optional local service engineer retainers are available for Mexico, Vietnam, and Poland."
+  },
+  {
+    q: "Does the machine come with installation and training?",
+    a: "Yes. Every S-70LD purchase includes on-site installation, machine calibration, and 3–5 days of operator training by a Southern Machinery application engineer. Post-installation, we provide remote 7×24 technical support in English, Spanish, and Vietnamese."
+  },
+  {
+    q: "Can the S-70LD integrate with my existing SMT line?",
+    a: "Yes. The S-70LD supports SMEMA/HERMES signal communication and can be integrated into new or existing lines alongside printers, pick-and-place machines, reflow ovens, and AOI equipment. We also offer full turnkey line integration — Loader → Printer → P&P → Reflow → AOI → THT → Wave → Unloader."
+  }
+];
+
+const machineSwitcher = [
+  { id: "S-70LD", name: "S-70LD Odd Form Machine" },
+  { id: "STF1003", name: "STF1003 Tube Feeder" },
+  { id: "SUL460", name: "SUL460 Auto Unloader" },
+  { id: "S-WS450", name: "S-WS450 Wave Solder" },
+  { id: "S3010A", name: "S3010A Axial Inserter" },
+  { id: "S4000", name: "S4000 Radial Inserter" },
+  { id: "S7020", name: "S7020 Insertion Machine" },
+  { id: "S-600SV", name: "S-600SV Vision P&P" },
+  { id: "S-530SV", name: "S-530SV High-Speed P&P" },
+  { id: "S-V8", name: "S-V8 Full-Line System" }
+];
+</script>
+<!-- ═══════════════════════════════════════════════ -->
+
+<style>
+/* ─── THEME TOKENS ──────────────────────────────── */
+:root {
+  --primary: #90C641;
+  --primary-dark: #6fa030;
+  --primary-light: #b0d870;
+  --secondary: #0AA5A5;
+  --secondary-dark: #077a7a;
+  --secondary-light: #0dd4d4;
+  --bg: #F7F8FA;
+  --surface: #FFFFFF;
+  --surface-2: #EEF1F6;
+  --text: #1A1F36;
+  --text-muted: #5E6580;
+  --border: #D8DDE6;
+  --shadow: rgba(26, 31, 54, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #0F1220;
+  --surface: #1A1F36;
+  --surface-2: #252B45;
+  --text: #E8ECF8;
+  --text-muted: #8B93B0;
+  --border: #2E3654;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background var(--transition), color var(--transition);
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
+
+/* ─── LAYOUT ────────────────────────────────────── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 80px 0; }
+.section-sm { padding: 48px 0; }
+
+/* ─── HEADER ───────────────────────────────────── */
+.site-header {
+  position: sticky; top: 0; z-index: 1000;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 16px var(--shadow);
+  transition: background var(--transition), border-color var(--transition);
+}
+.header-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px; gap: 24px;
+}
+.header-logo img { height: 48px; width: auto; display: block; }
+.header-brand {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.header-brand .brand-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+.header-brand .brand-tagline {
+  font-size: 11px; color: var(--text-muted);
+  font-weight: 500;
+}
+.header-actions { display: flex; align-items: center; gap: 12px; }
+
+/* ─── NAV LINK ──────────────────────────────────── */
+.nav-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; border-radius: var(--radius-sm);
+  background: var(--surface-2); color: var(--text);
+  font-size: 13px; font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.nav-link:hover { background: var(--primary); color: #fff; transform: translateY(-1px); }
+.nav-link-cta {
+  background: var(--primary); color: #fff;
+}
+.nav-link-cta:hover { background: var(--primary-dark); }
+
+/* ─── THEME TOGGLE ──────────────────────────────── */
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--surface-2); border: 2px solid var(--border);
+  cursor: pointer; font-size: 18px;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--primary); transform: rotate(15deg); }
+
+/* ─── MACHINE SWITCHER ──────────────────────────── */
+.machine-switcher {
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.machine-switcher::-webkit-scrollbar { display: none; }
+.switcher-inner {
+  display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+}
+.switcher-btn {
+  padding: 6px 16px; border-radius: 20px;
+  border: 2px solid var(--border);
+  background: var(--surface); color: var(--text-muted);
+  font-size: 12px; font-weight: 600; cursor: pointer;
+  white-space: nowrap; transition: all var(--transition);
+  text-decoration: none; display: inline-block;
+}
+.switcher-btn:hover, .switcher-btn.active {
+  border-color: var(--primary); background: var(--primary); color: #fff;
+}
+
+/* ─── HERO ──────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #0F1220 0%, #1A2A4A 50%, #0F2A3A 100%);
+  color: #fff; padding: 80px 0 60px;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2390C641' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+[data-theme="dark"] .hero { background: linear-gradient(135deg, #0a0e1a 0%, #111827 50%, #0a1628 100%); }
+
+.hero-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+  align-items: center; position: relative; z-index: 1;
+}
+.hero-content { }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(144, 198, 65, 0.15);
+  border: 1px solid rgba(144, 198, 65, 0.4);
+  color: var(--primary-light); padding: 6px 14px; border-radius: 20px;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+  text-transform: uppercase; margin-bottom: 20px;
+}
+.hero-badge .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--primary); animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 56px); font-weight: 900;
+  margin-bottom: 12px; letter-spacing: -1.5px;
+}
+.hero h1 span { color: var(--primary); }
+.hero .subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  color: rgba(255,255,255,0.75); margin-bottom: 16px;
+  font-weight: 500;
+}
+.hero .tagline {
+  font-size: 15px; color: rgba(255,255,255,0.55);
+  border-left: 3px solid var(--secondary); padding-left: 16px;
+  margin-bottom: 32px; line-height: 1.7;
+}
+.hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; border-radius: var(--radius-sm);
+  font-size: 14px; font-weight: 700;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap; letter-spacing: 0.3px;
+}
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(144,198,65,0.35); }
+.btn-secondary { background: rgba(255,255,255,0.1); color: #fff; border: 2px solid rgba(255,255,255,0.25); }
+.btn-secondary:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.5); }
+.btn-outline {
+  background: transparent; color: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+.btn-outline:hover { background: var(--secondary); color: #fff; }
+
+/* ─── HERO IMAGE ────────────────────────────────── */
+.hero-visual {
+  position: relative; border-radius: var(--radius);
+  overflow: hidden; aspect-ratio: 4/3;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-main-image {
+  width: 100%; height: 100%; object-fit: cover;
+  display: none;
+}
+.hero-image-placeholder {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 16px; color: rgba(255,255,255,0.4);
+  padding: 40px; text-align: center;
+}
+.hero-image-placeholder .icon { font-size: 64px; opacity: 0.6; }
+.hero-image-placeholder p { font-size: 14px; font-weight: 600; }
+.hero-image-placeholder span { font-size: 11px; opacity: 0.6; }
+.hero-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  margin-top: 40px; padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.hero-stat { text-align: center; }
+.hero-stat .num {
+  font-size: 28px; font-weight: 900;
+  color: var(--primary); font-family: 'Space Grotesk', sans-serif;
+}
+.hero-stat .label { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* ─── STAT BARS ─────────────────────────────────── */
+.hero-stats-vertical {
+  display: flex; flex-direction: column; gap: 16px;
+}
+.stat-bar-item { }
+.stat-bar-label { font-size: 12px; color: rgba(255,255,255,0.6); margin-bottom: 6px; font-weight: 600; }
+.stat-bar { height: 8px; background: rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; }
+.stat-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--secondary)); border-radius: 4px; transition: width 1.5s ease; }
+
+/* ─── SECTION HEADER ────────────────────────────── */
+.section-header { text-align: center; margin-bottom: 56px; }
+.section-header .eyebrow {
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--secondary);
+  margin-bottom: 12px;
+}
+.section-header h2 {
+  font-size: clamp(28px, 4vw, 40px); font-weight: 800;
+  letter-spacing: -0.8px; margin-bottom: 16px;
+}
+.section-header p { font-size: 17px; color: var(--text-muted); max-width: 640px; margin: 0 auto; }
+
+/* ─── GALLERY ───────────────────────────────────── */
+.gallery-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px;
+}
+.gallery-item {
+  border-radius: var(--radius); overflow: hidden;
+  aspect-ratio: 4/3; background: var(--surface-2);
+  border: 1px solid var(--border); cursor: pointer;
+  transition: all var(--transition); position: relative;
+}
+.gallery-item:hover { transform: translateY(-4px); box-shadow: 0 12px 40px var(--shadow); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: none; }
+.gallery-placeholder {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 8px; color: var(--text-muted); font-size: 12px; font-weight: 600;
+}
+.gallery-placeholder .icon { font-size: 32px; opacity: 0.4; }
+.gallery-item .gallery-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: #fff; font-size: 11px; font-weight: 600;
+  padding: 24px 12px 10px; text-align: center;
+}
+
+/* ─── LIGHTBOX ──────────────────────────────────── */
+.lightbox {
+  display: none; position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.9); align-items: center;
+  justify-content: center; padding: 40px;
+}
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 100%; max-height: 90vh; border-radius: var(--radius); }
+.lightbox-close {
+  position: absolute; top: 20px; right: 20px;
+  background: rgba(255,255,255,0.1); border: none;
+  color: #fff; width: 48px; height: 48px; border-radius: 50%;
+  font-size: 24px; cursor: pointer; display: flex;
+  align-items: center; justify-content: center;
+  transition: background var(--transition);
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.25); }
+
+/* ─── SPECS ─────────────────────────────────────── */
+.specs-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;
+}
+.spec-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 24px;
+  transition: all var(--transition);
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.spec-card:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 8px 32px var(--shadow); }
+.spec-icon { font-size: 28px; flex-shrink: 0; line-height: 1; }
+.spec-content { flex: 1; }
+.spec-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); margin-bottom: 4px; }
+.spec-value { font-size: 18px; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: var(--text); }
+
+/* ─── APPLICATIONS ──────────────────────────────── */
+.applications-section { background: var(--surface-2); }
+.applications-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;
+}
+.app-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px 20px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+.app-item:hover { border-color: var(--secondary); background: rgba(10,165,165,0.05); }
+.app-icon { font-size: 24px; flex-shrink: 0; }
+.app-text { font-size: 14px; font-weight: 600; }
+
+/* ─── BENEFITS ──────────────────────────────────── */
+.benefits-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.benefit-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 32px;
+  transition: all var(--transition);
+  position: relative; overflow: hidden;
+}
+.benefit-card::before {
+  content: ''; position: absolute; top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: linear-gradient(180deg, var(--primary), var(--secondary));
+}
+.benefit-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px var(--shadow); border-color: transparent; }
+.benefit-icon { font-size: 36px; margin-bottom: 16px; }
+.benefit-title { font-size: 18px; font-weight: 800; margin-bottom: 10px; font-family: 'Space Grotesk', sans-serif; }
+.benefit-desc { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+/* ─── UPLOAD SECTION ────────────────────────────── */
+.upload-section { background: var(--surface-2); }
+.upload-zone {
+  border: 2px dashed var(--border); border-radius: var(--radius);
+  padding: 48px 32px; text-align: center;
+  background: var(--surface);
+  transition: all var(--transition); cursor: pointer;
+  position: relative;
+}
+.upload-zone:hover, .upload-zone.drag-over {
+  border-color: var(--primary); background: rgba(144,198,65,0.04);
+}
+.upload-zone input[type="file"] {
+  position: absolute; inset: 0; opacity: 0; cursor: pointer;
+  width: 100%; height: 100%;
+}
+.upload-icon { font-size: 48px; margin-bottom: 16px; }
+.upload-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.upload-subtitle { font-size: 13px; color: var(--text-muted); }
+
+.upload-url-area { margin-top: 24px; }
+.upload-url-area label {
+  display: block; font-size: 13px; font-weight: 700;
+  margin-bottom: 8px; text-align: left; color: var(--text-muted);
+}
+.url-input-group { display: flex; gap: 8px; }
+.url-input-group input {
+  flex: 1; padding: 12px 16px; border-radius: var(--radius-sm);
+  border: 1px solid var(--border); background: var(--surface);
+  color: var(--text); font-size: 14px;
+  transition: border-color var(--transition);
+}
+.url-input-group input:focus { outline: none; border-color: var(--primary); }
+
+.upload-preview {
+  margin-top: 24px;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px;
+}
+.preview-item {
+  position: relative; border-radius: var(--radius-sm);
+  overflow: hidden; aspect-ratio: 1;
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.preview-item img { width: 100%; height: 100%; object-fit: cover; }
+.preview-pdf {
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 4px;
+  height: 100%; color: var(--text-muted); font-size: 11px; font-weight: 600;
+}
+.preview-pdf .icon { font-size: 28px; }
+.preview-url {
+  display: flex; align-items: center; justify-content: center;
+  padding: 8px; word-break: break-all; font-size: 10px;
+  color: var(--secondary); font-weight: 600;
+  height: 100%;
+}
+.preview-remove {
+  position: absolute; top: 4px; right: 4px;
+  background: rgba(0,0,0,0.6); border: none; color: #fff;
+  width: 24px; height: 24px; border-radius: 50%;
+  font-size: 12px; cursor: pointer; display: none;
+  align-items: center; justify-content: center;
+}
+.preview-item:hover .preview-remove { display: flex; }
+.upload-actions { margin-top: 20px; text-align: right; }
+
+/* ─── FAQ ───────────────────────────────────────── */
+.faq-list { max-width: 800px; margin: 0 auto; }
+.faq-item {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: 12px;
+  overflow: hidden; transition: all var(--transition);
+}
+.faq-item:hover { border-color: var(--primary-light); }
+.faq-question {
+  width: 100%; padding: 20px 24px;
+  background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; text-align: left;
+  font-size: 15px; font-weight: 700;
+  color: var(--text); font-family: inherit;
+}
+.faq-question .q-icon { font-size: 20px; flex-shrink: 0; color: var(--primary); }
+.faq-question .q-toggle {
+  font-size: 18px; flex-shrink: 0;
+  color: var(--text-muted); transition: transform var(--transition);
+}
+.faq-item.open .q-toggle { transform: rotate(45deg); }
+.faq-answer {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-item.open .faq-answer { max-height: 600px; }
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 14px; color: var(--text-muted); line-height: 1.8;
+  border-top: 1px solid var(--surface-2); padding-top: 16px;
+}
+
+/* ─── INQUIRY FORM ──────────────────────────────── */
+.inquiry-section { background: var(--surface-2); }
+.inquiry-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+.inquiry-info h3 { font-size: 28px; font-weight: 800; margin-bottom: 16px; }
+.inquiry-info p { color: var(--text-muted); font-size: 15px; margin-bottom: 24px; line-height: 1.7; }
+.inquiry-features { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.inquiry-features li {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 14px; font-weight: 600;
+}
+.inquiry-features li .icon { font-size: 20px; }
+.form-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 36px;
+  box-shadow: 0 8px 32px var(--shadow);
+}
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { margin-bottom: 16px; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label {
+  display: block; font-size: 12px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  color: var(--text-muted); margin-bottom: 6px;
+}
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 12px 16px;
+  border: 1px solid var(--border); border-radius: var(--radius-sm);
+  background: var(--bg); color: var(--text);
+  font-size: 14px; font-family: inherit;
+  transition: border-color var(--transition);
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none; border-color: var(--primary);
+}
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.form-actions .btn { justify-content: center; width: 100%; }
+
+/* ─── FOOTER ────────────────────────────────────── */
+.site-footer {
+  background: #0F1220; color: rgba(255,255,255,0.7);
+  padding: 60px 0 0;
+}
+[data-theme="dark"] .site-footer { background: #070910; }
+.footer-grid {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-brand .logo { height: 44px; margin-bottom: 16px; filter: brightness(0) invert(1); }
+.footer-brand .tagline { font-size: 13px; line-height: 1.7; margin-bottom: 20px; }
+.footer-col h4 { color: #fff; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col ul li a {
+  color: rgba(255,255,255,0.55); text-decoration: none;
+  font-size: 13px; transition: color var(--transition);
+  display: flex; align-items: center; gap: 6px;
+}
+.footer-col ul li a:hover { color: var(--primary); }
+.footer-col ul li a .icon { font-size: 16px; }
+.footer-bottom {
+  padding: 20px 0; display: flex;
+  align-items: center; justify-content: space-between;
+  font-size: 12px; color: rgba(255,255,255,0.35);
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; }
+.footer-bottom a:hover { color: var(--primary); }
+
+/* ─── CTA FLOATING BAR ──────────────────────────── */
+.cta-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 900;
+  background: var(--surface); border-top: 1px solid var(--border);
+  box-shadow: 0 -4px 24px var(--shadow);
+  padding: 12px 0; display: none;
+  transition: transform var(--transition);
+}
+.cta-bar.visible { display: block; }
+.cta-bar-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px;
+}
+.cta-bar-info { font-size: 13px; font-weight: 700; }
+.cta-bar-info .name { color: var(--text); }
+.cta-bar-info .price { color: var(--primary); font-size: 15px; }
+.cta-bar-actions { display: flex; gap: 8px; }
+.cta-bar-actions .btn { padding: 10px 20px; font-size: 13px; }
+
+/* ─── TOAST ─────────────────────────────────────── */
+.toast {
+  position: fixed; bottom: 80px; right: 24px; z-index: 9999;
+  background: var(--text); color: var(--bg);
+  padding: 14px 24px; border-radius: var(--radius-sm);
+  font-size: 14px; font-weight: 600;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  transform: translateY(20px); opacity: 0;
+  transition: all 0.3s ease;
+}
+.toast.show { transform: translateY(0); opacity: 1; }
+.toast.success { border-left: 4px solid var(--primary); }
+.toast.error { border-left: 4px solid #e53e3e; }
+
+/* ─── SCROLL ANIMATIONS ─────────────────────────── */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── RESPONSIVE ────────────────────────────────── */
+@media (max-width: 768px) {
+  .header-inner { height: 60px; }
+  .header-brand { display: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero h1 { font-size: 32px; }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .section { padding: 56px 0; }
+  .inquiry-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .cta-bar-inner { flex-direction: column; gap: 8px; }
+  .cta-bar-actions { width: 100%; }
+  .cta-bar-actions .btn { flex: 1; }
+  .specs-grid { grid-template-columns: 1fr 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .specs-grid { grid-template-columns: 1fr; }
+  .url-input-group { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     SITE HEADER
+     ═══════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="https://www.SMThelp.com" target="_blank" rel="noopener" class="header-logo">
+        <img src="https://ph.smthelp.com/images/2024/06/26/Southern-Machinery-logo-300x83.png" alt="Southern Machinery Logo" loading="eager">
+      </a>
+      <div class="header-brand">
+        <span class="brand-name">Southern Machinery</span>
+        <span class="brand-tagline">Your Trusted Partner for SMT & THT Solutions</span>
+      </div>
+      <div class="header-actions">
+        <a href="https://www.SMThelp.com" target="_blank" rel="noopener" class="nav-link">Catalog</a>
+        <a href="https://file.autoinsertion.com" target="_blank" rel="noopener" class="nav-link">Files</a>
+        <a href="#inquiry" class="nav-link nav-link-cta">Get Quote</a>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light mode">🌙</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════
+     MACHINE SWITCHER
+     ═══════════════════════════════════════════════ -->
+<nav class="machine-switcher" aria-label="Product navigation">
+  <div class="container">
+    <div class="switcher-inner" id="machineSwitcher">
+      <!-- Populated by JavaScript -->
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          <span id="heroBadge">Southern Machinery · Flagship THT Solution</span>
+        </div>
+        <h1 id="heroTitle">S-70LD <span>Odd Form Machine</span></h1>
+        <p class="subtitle" id="heroSubtitle">Automated Radial & Odd-Form Insertion — Eliminate Manual THT Labor</p>
+        <p class="tagline" id="heroTagline">From 9 manual operators to 1 automated cell. 70–90% labor reduction. 18–24 month payback. CE certified, globally supported.</p>
+        <div class="hero-ctas">
+          <a href="#inquiry" class="btn btn-primary">⚡ Get a Quote</a>
+          <a href="#gallery" class="btn btn-secondary">📷 View Gallery</a>
+          <a href="#specs" class="btn btn-secondary">📋 Technical Specs</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="num" data-count="90">0</div>
+            <div class="label">% Labor Saved</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num" data-count="2500" data-suffix="+">0</div>
+            <div class="label">CPH Max Speed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="num" data-count="24" data-suffix="mo">0</div>
+            <div class="label">Payback Period</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" id="heroVisual">
+        <img class="hero-main-image" id="heroImage" src="" alt="S-70LD Odd Form Machine">
+        <div class="hero-image-placeholder" id="heroImagePlaceholder">
+          <div class="icon">🏭</div>
+          <p id="heroImageTitle">S-70LD Odd Form Machine</p>
+          <span>CE Certified · Global Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     PRODUCT GALLERY
+     ═══════════════════════════════════════════════ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Product Gallery</div>
+      <h2>See the <span style="color:var(--primary)">S-70LD</span> in Action</h2>
+      <p>Click any image to view full size. Browse full photo catalog at ph.smthelp.com</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Populated by JavaScript -->
+    </div>
+    <div style="text-align:center; margin-top:24px;">
+      <a href="https://ph.smthelp.com" target="_blank" rel="noopener" class="btn btn-outline">📸 Browse Full Photo Catalog</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     TECHNICAL SPECS
+     ═══════════════════════════════════════════════ -->
+<section class="section" id="specs" style="background:var(--surface-2);">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Technical Specifications</div>
+      <h2>Built for <span style="color:var(--secondary)">Precision</span> & Speed</h2>
+      <p>Every specification is factory-verified. Full datasheet available on request.</p>
+    </div>
+    <div class="specs-grid" id="specsGrid">
+      <!-- Populated by JavaScript -->
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <a href="#inquiry" class="btn btn-primary">📄 Download Full Datasheet</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     APPLICATIONS
+     ═══════════════════════════════════════════════ -->
+<section class="section applications-section" id="applications">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Typical Applications</div>
+      <h2>Industries & Products <span style="color:var(--primary)">We Serve</span></h2>
+      <p>The S-70LD handles the widest variety of radial and odd-form components for electronics manufacturing across verticals.</p>
+    </div>
+    <div class="applications-grid" id="applicationsGrid">
+      <!-- Populated by JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     WHY CHOOSE THIS MACHINE
+     ═══════════════════════════════════════════════ -->
+<section class="section" id="benefits">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Value Proposition</div>
+      <h2>Why Choose the <span style="color:var(--primary)">S-70LD</span></h2>
+      <p>More than a machine — a complete labor-cost transformation for your THT operation.</p>
+    </div>
+    <div class="benefits-grid" id="benefitsGrid">
+      <!-- Populated by JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     UPLOAD / PREVIEW
+     ═══════════════════════════════════════════════ -->
+<section class="section upload-section" id="upload">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Share Your Files</div>
+      <h2>Upload Your Catalog / Product Images / URLs</h2>
+      <p>Attach your PCB files, component specs, or product images — or paste URLs below. We'll review and prepare a custom quote.</p>
+    </div>
+    <div class="upload-zone" id="uploadZone">
+      <input type="file" id="fileInput" multiple accept="image/*,.pdf,.step,.stp,.cad" aria-label="Upload files">
+      <div class="upload-icon">📁</div>
+      <div class="upload-title">Drag & drop files here, or click to browse</div>
+      <div class="upload-subtitle">Supports: JPG, PNG, PDF, STEP, STP, CAD · Multiple files allowed</div>
+    </div>
+
+    <div class="upload-url-area">
+      <label for="urlInput">Paste Image / File URLs (one per line)</label>
+      <div class="url-input-group">
+        <input type="text" id="urlInput" placeholder="https://...&#10;https://..." aria-label="Paste URLs">
+        <button class="btn btn-outline" onclick="addURLs()">Add URLs</button>
+      </div>
+    </div>
+
+    <div class="upload-preview" id="uploadPreview">
+      <!-- Populated by JavaScript -->
+    </div>
+    <div class="upload-actions">
+      <button class="btn btn-secondary" onclick="clearPreviews()" style="font-size:13px;">🗑️ Clear All</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════════ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="eyebrow">Frequently Asked Questions</div>
+      <h2>Questions <span style="color:var(--secondary)">Answered</span></h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <!-- Populated by JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     INQUIRY FORM
+     ═══════════════════════════════════════════════ -->
+<section class="section inquiry-section" id="inquiry">
+  <div class="container">
+    <div class="inquiry-grid">
+      <div class="inquiry-info reveal">
+        <div class="eyebrow" style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--secondary); margin-bottom:12px;">Ready to Transform Your THT Line?</div>
+        <h3>Get a Custom Quote for <span id="formProductName" style="color:var(--primary)">S-70LD</span></h3>
+        <p>Fill out the form and our application engineer will respond within 1 business day with a detailed proposal, ROI analysis, and delivery timeline.</p>
+        <ul class="inquiry-features">
+          <li><span class="icon">✅</span> Detailed line layout & floor plan</li>
+          <li><span class="icon">✅</span> Full ROI & payback analysis</li>
+          <li><span class="icon">✅</span> CIF/DDP shipping quote to your location</li>
+          <li><span class="icon">✅</span> Installation & training plan</li>
+          <li><span class="icon">✅</span> Spare parts starter kit recommendation</li>
+          <li><span class="icon">✅</span> Reference customers in your industry</li>
+        </ul>
+        <div style="margin-top:32px; padding:20px; background:var(--surface); border-radius:var(--radius-sm); border:1px solid var(--border);">
+          <div style="font-size:13px; font-weight:700; margin-bottom:12px;">📞 Prefer to talk directly?</div>
+          <a href="https://wa.me/8613602562576" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:700; color:var(--secondary); text-decoration:none; margin-bottom:8px;">
+            💬 WhatsApp: +86 136 0256 2576
+          </a>
+          <a href="mailto:info@SMThelp.com" style="display:flex; align-items:center; gap:8px; font-size:14px; color:var(--text-muted); text-decoration:none;">
+            ✉️ info@SMThelp.com
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form-card">
+          <form id="inquiryForm" onsubmit="handleSubmit(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Martinez" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Company *</label>
+                <input type="text" id="company" name="company" placeholder="TechFab Mexico" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@techfab.mx" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" placeholder="+52 33 1234 5678">
+              </div>
+              <div class="form-group">
+                <label for="country">Country *</label>
+                <select id="country" name="country" required>
+                  <option value="">Select country...</option>
+                  <option value="MX">Mexico</option>
+                  <option value="VN">Vietnam</option>
+                  <option value="IN">India</option>
+                  <option value="PL">Poland</option>
+                  <option value="RO">Romania</option>
+                  <option value="HU">Hungary</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="BR">Brazil</option>
+                  <option value="MA">Morocco</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="TH">Thailand</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="US">United States</option>
+                  <option value="DE">Germany</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="OTHER">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="product">Interested In</label>
+                <select id="product" name="product">
+                  <option value="S-70LD">S-70LD Odd Form Machine</option>
+                  <option value="STF1003">STF1003 Tube Feeder</option>
+                  <option value="SUL460">SUL460 Auto Unloader</option>
+                  <option value="S-WS450">S-WS450 Wave Solder</option>
+                  <option value="S3010A">S3010A Axial Inserter</option>
+                  <option value="S4000">S4000 Radial Inserter</option>
+                  <option value="S7020">S7020 Insertion Machine</option>
+                  <option value="S-600SV">S-600SV Vision P&P</option>
+                  <option value="S-530SV">S-530SV High-Speed P&P</option>
+                  <option value="FULL_LINE">Full Turnkey SMT/THT Line</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message" placeholder="Describe your current THT process, daily board volume, and what you'd like to achieve..." required></textarea>
+              </div>
+              <div class="form-group full">
+                <label for="volume">Estimated Monthly Volume</label>
+                <select id="volume" name="volume">
+                  <option value="">Select volume range...</option>
+                  <option value="<10K">Less than 10,000 boards/month</option>
+                  <option value="10K-50K">10,000 – 50,000 boards/month</option>
+                  <option value="50K-200K">50,000 – 200,000 boards/month</option>
+                  <option value="200K+">200,000+ boards/month</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" style="background:var(--primary);">⚡ Get Quote + ROI Analysis</button>
+              <button type="button" class="btn btn-outline" onclick="askForVideo()">🎥 Ask for Machine Video</button>
+              <button type="button" class="btn btn-secondary" onclick="requestLayout()">📐 Request Line Layout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SITE FOOTER
+     ═══════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://ph.smthelp.com/images/2024/06/26/Southern-Machinery-logo-300x83.png" alt="Southern Machinery" class="logo">
+        <p class="tagline">Your Trusted Partner for SMT & THT Solutions.<br>Shaping the Future of Electronics Manufacturing.</p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="https://www.linkedin.com/company/smtmachine" target="_blank" rel="noopener" class="nav-link" style="padding:6px 10px; font-size:12px;">LinkedIn</a>
+          <a href="https://cn.linkedin.com/in/smtsupplier" target="_blank" rel="noopener" class="nav-link" style="padding:6px 10px; font-size:12px;">Jason Wu</a>
+          <a href="https://twitter.com/smtspecialist" target="_blank" rel="noopener" class="nav-link" style="padding:6px 10px; font-size:12px;">Twitter</a>
+          <a href="https://www.facebook.com/autoinsertion" target="_blank" rel="noopener" class="nav-link" style="padding:6px 10px; font-size:12px;">Facebook</a>
+          <a href="https://www.youtube.com/c/Smthelping" target="_blank" rel="noopener" class="nav-link" style="padding:6px 10px; font-size:12px;">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#specs">S-70LD Odd Form Machine</a></li>
+          <li><a href="#specs">S-WS450 Wave Solder</a></li>
+          <li><a href="#specs">SUL460 Auto Unloader</a></li>
+          <li><a href="#specs">S3010A Axial Inserter</a></li>
+          <li><a href="#specs">Full Turnkey Lines</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://file.autoinsertion.com" target="_blank" rel="noopener"><span class="icon">📁</span> Machine Catalog</a></li>
+          <li><a href="https://ph.smthelp.com" target="_blank" rel="noopener"><span class="icon">📷</span> Photo Gallery</a></li>
+          <li><a href="#faq"><span class="icon">❓</span> FAQ</a></li>
+          <li><a href="#specs"><span class="icon">📋</span> Specifications</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/8613602562576" target="_blank" rel="noopener"><span class="icon">📞</span> +86 136 0256 2576</a></li>
+          <li><a href="mailto:info@SMThelp.com"><span class="icon">✉️</span> info@SMThelp.com</a></li>
+          <li><a href="https://www.SMThelp.com" target="_blank" rel="noopener"><span class="icon">🌐</span> SMThelp.com</a></li>
+          <li><a href="https://www.linkedin.com/company/smtmachine" target="_blank" rel="noopener"><span class="icon">💼</span> LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Southern Machinery (南方机械). All rights reserved.</span>
+      <span>Shenzhen, China · Global EMS Equipment Partner</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+     FLOATING CTA BAR
+     ═══════════════════════════════════════════════ -->
+<div class="cta-bar" id="ctaBar">
+  <div class="container">
+    <div class="cta-bar-inner">
+      <div class="cta-bar-info">
+        <span class="name" id="ctaProductName">S-70LD Odd Form Machine</span>
+        <span class="price" id="ctaPrice">From $45,000 CIF</span>
+      </div>
+      <div class="cta-bar-actions">
+        <a href="#inquiry" class="btn btn-primary">⚡ Get Quote</a>
+        <a href="https://wa.me/8613602562576" target="_blank" rel="noopener" class="btn btn-secondary">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     LIGHTBOX
+     ═══════════════════════════════════════════════ -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightboxImg" src="" alt="Product image">
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     TOAST
+     ═══════════════════════════════════════════════ -->
+<div class="toast" id="toast"></div>
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════ -->
+<script>
+// ─── THEME ───────────────────────────────────────
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  document.querySelector('.theme-toggle').textContent = next === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('theme', next);
+}
+(function() {
+  const saved = localStorage.getItem('theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+  document.querySelector('.theme-toggle').textContent = (saved || 'light') === 'dark' ? '☀️' : '🌙';
+})();
+
+// ─── MACHINE SWITCHER ─────────────────────────────
+(function renderSwitcher() {
+  const el = document.getElementById('machineSwitcher');
+  el.innerHTML = machineSwitcher.map(m =>
+    `<a href="?m=${m.id}" class="switcher-btn${m.id === 'S-70LD' ? ' active' : ''}">${m.name}</a>`
+  ).join('');
+})();
+
+// ─── GALLERY ──────────────────────────────────────
+(function renderGallery() {
+  const grid = document.getElementById('galleryGrid');
+  const labels = ['Front View', 'Side View', 'Feeder System', 'Control Panel', 'In Production'];
+  const icons = ['🏭', '📐', '📦', '🖥️', '⚙️'];
+  grid.innerHTML = productImages.map((src, i) => {
+    const isPlaceholder = !src || src.includes('ph.smthelp.com') && !src.match(/\.(jpg|png|webp|jpeg)/i);
+    return `<div class="gallery-item" onclick="openLightbox('${src}')">
+      ${isPlaceholder
+        ? `<div class="gallery-placeholder"><div class="icon">${icons[i] || '📷'}</div><p>${labels[i] || 'Image ' + (i+1)}</p></div>`
+        : `<img src="${src}" alt="${labels[i] || 'Product image ' + (i+1)}" loading="lazy">`
+      }
+      <div class="gallery-label">${labels[i] || 'Image ' + (i+1)}</div>
+    </div>`;
+  }).join('');
+})();
+
+function openLightbox(src) {
+  if (!src || src.includes('ph.smthelp.com') && !src.match(/\.(jpg|png|webp|jpeg)/i)) return;
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+
+// ─── SPECS ────────────────────────────────────────
+(function renderSpecs() {
+  const grid = document.getElementById('specsGrid');
+  grid.innerHTML = productSpecs.map(s =>
+    `<div class="spec-card reveal">
+      <div class="spec-icon">${s.icon}</div>
+      <div class="spec-content">
+        <div class="spec-label">${s.label}</div>
+        <div class="spec-value">${s.value}</div>
+      </div>
+    </div>`
+  ).join('');
+})();
+
+// ─── APPLICATIONS ─────────────────────────────────
+(function renderApplications() {
+  const grid = document.getElementById('applicationsGrid');
+  const icons = ['🏠','💡','🔌','🏭','🚗','⚡','📡','❄️'];
+  grid.innerHTML = productApplications.map((app, i) =>
+    `<div class="app-item reveal">
+      <div class="app-icon">${icons[i] || '✓'}</div>
+      <div class="app-text">${app}</div>
+    </div>`
+  ).join('');
+})();
+
+// ─── BENEFITS ─────────────────────────────────────
+(function renderBenefits() {
+  const grid = document.getElementById('benefitsGrid');
+  const icons = ['💰','📈','🎯','🔄','🛡️','🌍'];
+  grid.innerHTML = productBenefits.map((b, i) =>
+    `<div class="benefit-card reveal">
+      <div class="benefit-icon">${icons[i]}</div>
+      <div class="benefit-title">${b.title}</div>
+      <div class="benefit-desc">${b.desc}</div>
+    </div>`
+  ).join('');
+})();
+
+// ─── FAQ ───────────────────────────────────────────
+(function renderFAQ() {
+  const list = document.getElementById('faqList');
+  list.innerHTML = productFAQs.map((f, i) =>
+    `<div class="faq-item reveal" id="faq-${i}">
+      <button class="faq-question" onclick="toggleFAQ(${i})" aria-expanded="false">
+        <span class="q-icon">❓</span>
+        <span>${f.q}</span>
+        <span class="q-toggle">+</span>
+      </button>
+      <div class="faq-answer" aria-hidden="true">
+        <div class="faq-answer-inner">${f.a}</div>
+      </div>
+    </div>`
+  ).join('');
+})();
+
+function toggleFAQ(i) {
+  const item = document.getElementById(`faq-${i}`);
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ─── UPLOAD / PREVIEW ──────────────────────────────
+const previews = [];
+
+function renderPreviews() {
+  const container = document.getElementById('uploadPreview');
+  container.innerHTML = previews.map((p, i) => {
+    if (p.type === 'image') {
+      return `<div class="preview-item">
+        <img src="${p.data}" alt="Preview">
+        <button class="preview-remove" onclick="removePreview(${i})">✕</button>
+      </div>`;
+    } else if (p.type === 'pdf') {
+      return `<div class="preview-item">
+        <div class="preview-pdf"><div class="icon">📄</div>${p.name}</div>
+        <button class="preview-remove" onclick="removePreview(${i})">✕</button>
+      </div>`;
+    } else if (p.type === 'url') {
+      return `<div class="preview-item">
+        <div class="preview-url">${p.data}</div>
+        <button class="preview-remove" onclick="removePreview(${i})">✕</button>
+      </div>`;
+    }
+    return '';
+  }).join('');
+}
+
+function removePreview(i) { previews.splice(i, 1); renderPreviews(); }
+function clearPreviews() { previews.length = 0; renderPreviews(); showToast('All previews cleared', 'success'); }
+
+document.getElementById('fileInput').addEventListener('change', function(e) {
+  handleFiles(e.target.files);
+});
+
+const uploadZone = document.getElementById('uploadZone');
+uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+uploadZone.addEventListener('drop', e => {
+  e.preventDefault(); uploadZone.classList.remove('drag-over');
+  handleFiles(e.dataTransfer.files);
+});
+
+function handleFiles(files) {
+  Array.from(files).forEach(file => {
+    if (file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = ev => { previews.push({ type: 'image', data: ev.target.result, name: file.name }); renderPreviews(); };
+      reader.readAsDataURL(file);
+    } else if (file.type === 'application/pdf') {
+      previews.push({ type: 'pdf', data: null, name: file.name });
+      renderPreviews();
+    } else {
+      previews.push({ type: 'pdf', data: null, name: file.name });
+      renderPreviews();
+    }
+  });
+}
+
+function addURLs() {
+  const input = document.getElementById('urlInput');
+  const urls = input.value.split('\n').map(u => u.trim()).filter(u => u.startsWith('http'));
+  if (!urls.length) { showToast('Please enter valid URLs', 'error'); return; }
+  urls.forEach(url => {
+    if (/\.(jpg|jpeg|png|gif|webp|svg)/i.test(url)) {
+      previews.push({ type: 'image', data: url, name: url.split('/').pop() });
+    } else {
+      previews.push({ type: 'url', data: url });
+    }
+  });
+  input.value = '';
+  renderPreviews();
+  showToast(`${urls.length} URL(s) added`, 'success');
+}
+
+// ─── FORM ──────────────────────────────────────────
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  const info = Object.fromEntries(data.entries());
+  if (!info.name || !info.email || !info.company) {
+    showToast('Please fill in all required fields', 'error');
+    return;
+  }
+  showToast('Quote request sent! We\'ll reply within 1 business day.', 'success');
+  form.reset();
+}
+
+function askForVideo() {
+  const name = document.getElementById('name').value || 'Valued Customer';
+  showToast(`${name}, a video link will be sent to your email within 24 hours!`, 'success');
+}
+
+function requestLayout() {
+  const company = document.getElementById('company').value || 'Your Company';
+  showToast(`${company} — a line layout proposal will be emailed to you within 1 business day.`, 'success');
+}
+
+// ─── TOAST ─────────────────────────────────────────
+function showToast(msg, type = 'success') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `toast ${type} show`;
+  setTimeout(() => t.classList.remove('show'), 3500);
+}
+
+// ─── SCROLL ANIMATIONS ─────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ─── COUNTER ANIMATION ─────────────────────────────
+function animateCounters() {
+  document.querySelectorAll('.hero-stat .num').forEach(el => {
+    const target = parseInt(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1800;
+    const start = performance.now();
+    function update(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  });
+}
+setTimeout(animateCounters, 600);
+
+// ─── FLOATING CTA BAR ─────────────────────────────
+const ctaBar = document.getElementById('ctaBar');
+window.addEventListener('scroll', () => {
+  ctaBar.classList.toggle('visible', window.scrollY > 600);
+}, { passive: true });
+
+// ─── URL PARAM MACHINE SWITCHING ──────────────────
+(function switchFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const m = params.get('m');
+  if (m) {
+    const found = machineSwitcher.find(x => x.id === m);
+    if (found) {
+      document.getElementById('heroTitle').innerHTML = `${found.name.split(' ')[0]} <span>${found.name.split(' ').slice(1).join(' ')}</span>`;
+      document.getElementById('heroSubtitle').textContent = found.name;
+      document.getElementById('formProductName').textContent = found.name;
+      document.getElementById('ctaProductName').textContent = found.name;
+      document.querySelectorAll('.switcher-btn').forEach(b => b.classList.remove('active'));
+    }
+  }
+})();
+</script>
+</body>
+</html>
